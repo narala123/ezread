@@ -1,0 +1,50 @@
+<!-- Generated template for the WordslistComponent component -->
+<!--
+<div *ngFor="let words of words">
+<p>{{words._id}}</p>
+</div>
+-->
+<!--<ion-content>
+
+  <ion-card *ngFor="let words of words" (click)="phonicImage(words.family,words._id)">
+   &lt;!&ndash; <img src="img/card-saopaolo.png"/>&ndash;&gt;
+    <div class="card-title">{{words._id}}</div>
+    <div class="card-subtitle">{{words.family}}</div>
+
+  </ion-card>
+
+
+</ion-content>-->
+
+
+<ion-header>
+  <ion-navbar color="danger" hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<!--
+<ion-content >
+<ion-list>
+  <ion-card *ngFor="let List of phonicFamilyImages" (click)="phonicFamilyList(List.imageFamily)">
+    &lt;!&ndash;<img src="img/card-saopaolo.png"/>
+
+    <div class="card-subtitle"></div>&ndash;&gt;
+  </ion-card>
+</ion-list>
+</ion-content>-->
+
+<ion-content padding>
+
+  <ion-list>
+    <button ion-item class="line-height2" *ngFor="let words of words" (click)="phonicImage(words.family,words._id)">
+      {{words._id}}
+    </button>
+  </ion-list>
+
+</ion-content>
+
+

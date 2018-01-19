@@ -1,0 +1,73 @@
+<ion-content>
+  <!--<p>{{displayContent}}</p>-->
+  <div *ngFor="let p of letters">
+  <button ion-button (click)="letter(p)">{{p}}</button>
+    <br>
+  </div>
+</ion-content>
+
+
+
+<!--
+<meta http-equiv="Content-Security-Policy">
+<ion-header>
+  <ion-navbar color="danger" hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  &lt;!&ndash;(ionSlideDidChange)="sildeChanged($event)"&ndash;&gt;
+  <ion-slides>
+
+    <ion-slide *ngFor="let img of bookMarkImages">
+
+      <ion-card>
+
+        <ion-card-content>
+          <ion-card-title class="owText">
+            &lt;!&ndash;  <div [innerHTML]="img.wordTitle"></div> &ndash;&gt;
+            <span [outerHTML]="img._id"></span>
+
+          </ion-card-title>
+          <br>
+          &lt;!&ndash;<p>
+           Family: {{img.family}}
+          </p>&ndash;&gt;
+        </ion-card-content>
+        <img [src]="'data:image/png;base64,'+ img.imageData">
+
+        <ion-row no-padding>
+          <ion-col>
+            <button ion-button clear small color="danger" icon-start (click)="unFav(img)">
+              <ion-icon name='star'></ion-icon>
+              UnFavorite
+            </button>
+          </ion-col>
+          <ion-col text-center>
+            <button ion-button clear small color="danger" icon-start (click)="listen(img._id)">
+              <ion-icon name='musical-notes'></ion-icon>
+              Listen
+            </button>
+            &lt;!&ndash;<button ion-button clear small color="danger" icon-start class="butt js&#45;&#45;triggerAnimation" (click)="responsiveVoice.speak(img._id);"
+                    type="button" value="Play">Play</button>&ndash;&gt;
+          </ion-col>
+          <ion-col text-right>
+            <button ion-button clear small color="danger" icon-start disabled>
+              <ion-icon name='share-alt'></ion-icon>
+              Share
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
+
+-->

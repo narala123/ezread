@@ -1,0 +1,44 @@
+.line-height {
+  line-height: 2;
+  font-size:50px;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  background-color: #F7DC6F ;
+  border: 5px;
+  box-shadow: 0px 6px 6px #424949;
+  margin: 10px 0 15px 0;
+
+  //margin : 0px 0px 1px 0px;
+}
+
+.line-height2 {
+  line-height: 2;
+  font-size:50px;
+  color:white;
+  font-weight: bold;
+  text-align: center;
+  background-color: #F7DC6F ;
+  border: 5px;
+  box-shadow: 0px 7px 10px #424949;
+  //margin : 0px 0px 1px 0px;
+}
+.line-height:nth-child(odd) {
+  background-color: #FF8A65 ;
+}
+.line-height:nth-child(even) {
+  background-color: #F4511E ;
+}
+.line-height2:nth-child(odd) {
+  background-color: #AB47BC ;
+}
+.line-height2:nth-child(even) {
+  background-color: #EC407A ;
+}
+video {
+ width:100%;
+  height:auto;
+}
+.scroll{
+  display:none;
+}

@@ -1,0 +1,32 @@
+page-home {
+  .my-page {
+    background-color: #ffaa33;
+  }
+  #first-button {
+    margin-top : 360px;
+
+  }
+  ion-row {
+    margin : 9px 0px 0px 0px;
+  }
+  .ion-button{
+    border-radius: 30px;
+    font-size: 130%;
+    font-family:Verdana;
+    background-shadow:10px grey;
+
+  }
+
+}
+video::-internal-media-controls-download-button {
+  display:none;
+}
+
+video::-webkit-media-controls-enclosure {
+  overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+  width: calc(100% + 30px); /* Adjust as needed */
+}
+

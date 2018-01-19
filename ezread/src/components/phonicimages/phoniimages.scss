@@ -1,0 +1,97 @@
+.backgroundContent{
+  background-color: #222;
+}
+  .imagesize{
+    width:100%;
+    height: 200px;;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  .imagecontainer{
+    //margin: 30px;
+    color:red;
+  }
+  p{
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+  }
+  .imagecontainer h3{
+    color : #0000fe;
+    text-align: left;
+  }
+  .owText{
+    text-align:center;
+    font-family: 'Verdana';
+    position:relative;
+    text-transform:uppercase;
+    color: #ff5722;
+    font-size: 12vw;
+    letter-spacing: 1.2vw;
+    line-height:6vh;
+    text-shadow:20px;
+  }
+  .playbutton{
+    width : 60%;
+    height : 60px;
+    background-color :red ;
+    text-align : center;
+    color : white;
+    font-family : Verdana;
+    font-size: 12vw;
+    border-radius: 20px;
+  }
+
+  .ribbon{
+    width : 60%;
+    height : 60px;
+    background-color :#2582a1 ;
+    text-align : center;
+    color : white;
+    font-family : verdana;
+    margin : 10px auto;
+  }
+  .triangle{
+    height : 43px;
+    width : 43px;
+    background-color : red;
+    transform: rotate(45deg)
+  }
+ /* .ribbon >div:nth-child(1){
+    position : relative;
+    float:left;
+    left : -21px;
+    top : 10px;
+  }*/
+
+ /* .ribbon >div:nth-child(2){
+    position : relative;
+    float:right;
+    right : -21px;
+    top : 10px;
+  }*/
+  .lefty{
+    position : relative;
+    float:left;
+    left : -21px;
+    top : 8px;
+    background-color: #222;
+  }
+  .righty{
+    position : relative;
+    float:right;
+    right : -21px;
+    top : 8px;
+    background-color: #222;
+  }
+  .dataclass {
+    position: relative;
+    float: left;
+    //border: 3px solid red;
+    width: 60%;
+    height: 35px;
+  }
+  //padding-top : 6px;
+
+  // side * root(2) /2

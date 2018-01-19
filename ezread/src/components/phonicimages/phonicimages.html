@@ -1,0 +1,117 @@
+<meta http-equiv="Content-Security-Policy">
+<ion-header>
+  <ion-navbar color="light" hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="backgroundContent">
+
+  <ion-slides (ionSlideDidChange)="sildeChanged($event)">
+
+    <ion-slide *ngFor="let img of phonicImages">
+
+      <flash-card>
+        <div class="flash-card-front">
+
+
+          <img [src]="'data:image/png;base64,'+ img.imageData" class="imagesize">
+
+          <!--  <ion-row no-padding>
+              <ion-col>
+                <button ion-button clear small color="danger" icon-start (click)="bookmarksPage(img._id,img.imageData)">
+                  <ion-icon name='star'></ion-icon>
+                  Favorite
+                </button>
+              </ion-col>
+              <ion-col text-center>
+                <button ion-button clear small color="danger" icon-start (click)="listen(img._id)">
+                  <ion-icon name='musical-notes'></ion-icon>
+                  Listen
+                </button>
+                &lt;!&ndash;<button ion-button clear small color="danger" icon-start class="butt js&#45;&#45;triggerAnimation" (click)="responsiveVoice.speak(img._id);"
+                        type="button" value="Play">Play</button>&ndash;&gt;
+              </ion-col>
+              <ion-col text-right>
+                <button ion-button clear small color="danger" icon-start disabled>
+                  <ion-icon name='share-alt'></ion-icon>
+                  Share
+                </button>
+              </ion-col>
+            </ion-row>-->
+
+
+          <!--<p>
+           Family: {{img.family}}
+          </p>-->
+
+        </div>
+        <div class="flash-card-back">
+
+          <!--
+                      <ion-card-content>
+                        <ion-card-title class="owText">-->
+          <!--  <div [innerHTML]="img.wordTitle"></div> -->
+          <!-- <p><span [outerHTML]="img.wordTitle"></span></p>-->
+
+          <!-- </ion-card-title>
+           <br>-->
+          <!--<p>
+           Family: {{img.family}}
+          </p>-->
+          <!--</ion-card-content>-->
+          <!--<img [src]="'data:image/png;base64,'+ img.imageData">-->
+          <p style="color:red">{{ img.description + " " + img._id }}</p>
+
+        </div>
+      </flash-card>
+
+
+      <!--<div *ngFor="let split of img.splitwords">
+        <div class="short +{{split}}"></div>
+      </div>-->
+      <div class={{arr}}></div>
+
+      <div class="ribbon">
+        <div class="lefty triangle"></div>
+        <div class="dataclass" ><h3>{{img._id}}</h3></div>
+        <div class="righty triangle"></div>
+      </div>
+      <br><br>
+
+      <div>
+        <button class="playbutton" (click)="listen(img._id)">PLAY</button>
+      </div>
+      <!--   <ion-row no-padding>
+           <ion-col>
+             <button ion-button clear small color="danger" icon-start (click)="bookmarksPage(img._id,img.imageData)">
+               <ion-icon name='star'></ion-icon>
+               Favorite
+             </button>
+           </ion-col>
+           <ion-col text-center>
+             <button ion-button clear small color="danger" icon-start (click)="listen(img._id)">
+               <ion-icon name='musical-notes'></ion-icon>
+               Listen
+             </button>
+             &lt;!&ndash;<button ion-button clear small color="danger" icon-start class="butt js&#45;&#45;triggerAnimation" (click)="responsiveVoice.speak(img._id);"
+                     type="button" value="Play">Play</button>&ndash;&gt;
+           </ion-col>
+           <ion-col>
+             <button ion-button clear small color="danger" icon-start disabled>
+               <ion-icon name='share-alt'></ion-icon>
+               Share
+             </button>
+           </ion-col>
+         </ion-row>-->
+
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
+

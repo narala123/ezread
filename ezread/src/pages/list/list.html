@@ -1,0 +1,33 @@
+<ion-header color="primary">
+  <ion-navbar color="danger" hideBackButton>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<!--
+<ion-content >
+<ion-list>
+  <ion-card *ngFor="let List of phonicFamilyImages" (click)="phonicFamilyList(List.imageFamily)">
+    &lt;!&ndash;<img src="img/card-saopaolo.png"/>
+
+    <div class="card-subtitle"></div>&ndash;&gt;
+  </ion-card>
+</ion-list>
+</ion-content>-->
+
+<ion-content padding overflow-scroll="true">
+  <!-- autoplay="autoplay"-->
+  <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer">
+    <source src="../../assets/video/testvideo.mp4" type="video/mp4"/>
+  </video>
+  <ion-list>
+    <button ion-item class="line-height" *ngFor="let List of familyNames" (click)="save(List.family)">{{List.family}}
+      <p style="color: #0000ff"><b>
+        [{{List.family}}]</b>
+      </p></button>
+  </ion-list>
+
+</ion-content>
